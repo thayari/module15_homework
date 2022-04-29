@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Задание 1</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Задание 1</h1>
+    <p>Изобразить с помощью элементов SVG флаги пяти стран: Россия, Франция, Финляндия, Швейцария, Япония.
+      Каждый SVG-элемент с флагом должен иметь размер 180 на 120 пикселей.</p>
+    <div class="svg-flag" id="russia">
+      <svg width="180" height="120">
+        <rect x="0" y="0" width="180" height="40" fill="#fff" />
+        <rect x="0" y="40" width="180" height="40" fill="#0037a1" />
+        <rect x="0" y="80" width="180" height="40" fill="#ce2a1d" />
+        <rect x="0" y="0" width="180" height="120" stroke="rgb(0, 0, 0)" fill="none" />
+      </svg>
+    </div>
+    <div class="svg-flag" id="france">
+      <svg width="180" height="120">
+        <rect x="0" y="0" width="60" height="120" fill="#002496" />
+        <rect x="60" y="0" width="60" height="120" fill="#fff" />
+        <rect x="120" y="0" width="60" height="120" fill="#ee293a" />
+        <rect x="0" y="0" width="180" height="120" stroke="rgb(0, 0, 0)" fill="none" />
+      </svg>
+    </div>
+    <div class="svg-flag" id="finland">
+      <svg width="180" height="120">
+        <rect x="0" y="0" width="180" height="120" fill="#fff" />
+        <rect x="50" y="0" width="30" height="120" fill="#00337d" />
+        <rect x="0" y="45" width="180" height="30" fill="#00337d" />
+        <rect x="0" y="0" width="180" height="120" stroke="rgb(0, 0, 0)" fill="none" />
+      </svg>
+    </div>
+    <div class="svg-flag" id="swiss">
+      <svg width="180" height="120">
+        <rect x="0" y="0" width="180" height="120" fill="#db2415" />
+        <rect x="80" y="30" width="20" height="60" fill="#fff" />
+        <rect x="60" y="50" width="60" height="20" fill="#fff" />
+        <rect x="0" y="0" width="180" height="120" stroke="rgb(0, 0, 0)" fill="none" />
+      </svg>
+    </div>
+    <div class="svg-flag" id="japan">
+      <svg width="180" height="120">
+        <rect x="0" y="0" width="180" height="120" fill="#fff" />
+        <circle cx="90" cy="60" r="35" fill="#b6002c" />
+        <rect x="0" y="0" width="180" height="120" stroke="rgb(0, 0, 0)" fill="none" />
+      </svg>
+    </div>
+  </div>
+</body>
+</html>

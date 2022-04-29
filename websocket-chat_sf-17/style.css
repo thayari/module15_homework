@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.container {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.messages {
+  border: 2px solid rgb(166, 182, 201);
+  border-bottom: none;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 600px;
+  overflow: hidden;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #8f8f8f;;
+  height: 35px;
+  padding: 5px 10px;
+}
+
+.send-btn {
+  border: none;
+  background-color: #4eb543;
+  border-radius: 0;
+  padding: .35em 1em;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  background-color: #57c74b;
+}
+
+.message {
+  max-width: 70%;
+  padding: 1em 1.3em;
+  border-radius: 10px;
+  border-width: 3px;
+  border-style: solid;
+  margin-top: 14px;
+  overflow-wrap: break-word;
+}
+
+.user-message {
+  border-color:rgb(209, 225, 245);
+  align-self: flex-end;
+}
+
+.echo-message {
+  border-color:rgb(240, 219, 196);
+  align-self: flex-start;
+}
+
+.system-message {
+  border-color:rgb(240, 196, 227);
+  align-self: flex-start;
+}
+
+.geolocation-btn {
+  width: 35px;
+  border: 1px solid #8f8f8f;;
+  background: white;
+  cursor: pointer;
+}
