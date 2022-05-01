@@ -9,3 +9,59 @@
 .svg-flag {
   margin-bottom: 1rem;
 }
+
+.flex-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #beef5d;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #98d818;
+}
+
+button:active {
+  background-color: #88c411;
+}
+
+.output {
+  min-height: 8rem;
+}
+
+button.button-task2 {
+  padding: 1rem;
+}
+
+button.button-task2 .icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+button.button-task2 .icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+button.button-task2.fill-icon .icon:nth-child(1) {
+  display: none;
+}
+
+button.button-task2:not(.fill-icon) .icon:nth-child(2) {
+  display: none;
+}
