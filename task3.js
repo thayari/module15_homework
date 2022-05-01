@@ -12,6 +12,9 @@ window.onload = function() {
   const outputArea = document.querySelector('.output')
   button.addEventListener('click', showInfo)
   
+  /**
+	 * Обновление данных в поле вывода
+	 */
   function showInfo() {
     outputArea.innerHTML = ''
 
@@ -19,6 +22,9 @@ window.onload = function() {
     getLocation()
   }
 
+  /**
+	 * Получение координат
+	 */
   function getLocation() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(position => {
@@ -29,6 +35,10 @@ window.onload = function() {
     }
   }
 
+	/**
+	 * Вывод текста
+	 * @param {String} text 
+	 */
   function output(text) {
     outputArea.insertAdjacentHTML('beforeend', `<p>${text}</p>`)
   }
